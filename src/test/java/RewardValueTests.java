@@ -8,6 +8,8 @@ public class RewardValueTests {
     void create_with_cash_value() {
         double cashValue = 100;
         var rewardValue = new RewardValue(cashValue);
+        System.out.println("cashValue: " + cashValue);
+        System.out.println("rewardValue.getCashValue(): " + rewardValue.getCashValue());
         assertEquals(cashValue, rewardValue.getCashValue());
     }
 
